@@ -124,7 +124,7 @@ per.df.comb %>% ggplot(aes(color=fct_inorder(type),fill=mind)) +
 #par(new = TRUE) # <- magic
 ####  Drawing all 16 Personalities as Circos Chart
 
-png(filename="PersonalitiesChart.png", width=2000, height=2000, res=240)
+png(filename="PersonalitiesChart_240.png", width=2000, height=2000, res=240)
 circos.clear()
 circos.par(start.degree=90)
 circos.initialize(factor=per.df.comb$type, xlim=c(0,1))
@@ -135,6 +135,7 @@ circos.track(ylim=c(0,1),
                            facing = "inside", 
                            niceFacing= TRUE, font=2)
              })
+
 highlight.sector(per.df.comb$type[1:4], 
                  track.index = 1, 
                  text = per.df.comb$roles[1],
@@ -170,3 +171,4 @@ circos.track(ylim=c(0,1),
                            niceFacing= TRUE)
              })
 dev.off()
+
