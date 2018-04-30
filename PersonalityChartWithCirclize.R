@@ -139,22 +139,22 @@ highlight.sector(per.df.comb$type[1:4],
                  track.index = 1, 
                  text = per.df.comb$roles[1],
                  facing = "bending.inside", niceFacing = TRUE, 
-                 text.vjust = "10mm", cex = 1.5, col="#734C5F60")
+                 text.vjust = "15mm", cex = 1.5, col="#734C5F60")
 highlight.sector(per.df.comb$type[5:8], 
                  track.index = 1, 
                  text = per.df.comb$roles[5],
                  facing = "bending.inside", niceFacing = TRUE, 
-                 text.vjust = "10mm", cex = 1.5, col="#728D5660")
+                 text.vjust = "15mm", cex = 1.5, col="#728D5660")
 highlight.sector(per.df.comb$type[9:12], 
                  track.index = 1, 
                  text = per.df.comb$roles[9],
                  facing = "bending.inside", niceFacing = TRUE, 
-                 text.vjust = "10mm", cex = 1.5, col="#51A9AB60")
+                 text.vjust = "15mm", cex = 1.5, col="#51A9AB60")
 highlight.sector(per.df.comb$type[13:16], 
                  track.index = 1, 
                  text = per.df.comb$roles[13],
                  facing = "bending.inside", niceFacing = TRUE, 
-                 text.vjust = "10mm", cex = 1.5, col="#E5C82E60")
+                 text.vjust = "15mm", cex = 1.5, col="#E5C82E60")
 
 circos.track(ylim=c(0,1), 
              panel.fun = function(x,y){
